@@ -1756,6 +1756,16 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul li a.rc-github {
+			height: 50px;
+			width: 50px;
+			background-image: url(../../images/github-dark.png);
+		}
+
+		ul li a.rc-github:hover {
+			background-image: url(../../images/github-light.png);
+		}
+
 	ol {
 		list-style: decimal;
 		padding-left: 1.25em;
@@ -1764,6 +1774,76 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 		}
+
+/* Custom Social */
+
+	ul.social2 {
+		cursor: default;
+		margin: 0;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.social2 li {
+			position: relative;
+			display: inline-block;
+			margin: 0.25em;
+			top: 0;
+			padding-left: 0;
+		}
+
+			ul.social2 li a {
+				/*-moz-transition: top .2s ease-in-out;
+				-webkit-transition: top .2s ease-in-out;
+				-ms-transition: top .2s ease-in-out;
+				transition: top .2s ease-in-out;*/
+				display: block;
+				width: 64px;
+				height: 64px;
+				border-radius: 6px;
+				top: 0;
+				position: relative;
+			}
+
+				ul li a.rc-github {
+					background-image: url(../../images/github-dark.png);
+				}
+		
+				ul li a.rc-github:hover {
+					background-image: url(../../images/github-light.png);
+				}
+
+				ul li a.rc-itch-io {
+					background-image: url(../../images/itchio-dark.png);
+				}
+
+				ul li a.rc-itch-io:hover {
+					background-image: url(../../images/itchio-light.png);
+				}
+
+				ul.social2 li a:before {
+					background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+					background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+					background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+					background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+					-moz-transition: background-color .2s ease-in-out;
+					-webkit-transition: background-color .2s ease-in-out;
+					-ms-transition: background-color .2s ease-in-out;
+					transition: background-color .2s ease-in-out;
+					background-color: #444;
+					border-radius: 6px;
+					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+					color: #2E2E2E !important;
+					display: block;
+					font-size: 26px;
+					height: 48px;
+					line-height: 48px;
+					text-align: center;
+					outline: 0;
+					overflow: hidden;
+					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+					width: 48px;
+				}
 
 /* Social */
 
